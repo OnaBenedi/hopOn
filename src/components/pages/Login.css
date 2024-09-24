@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+.Login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../assets/img/bg.png");
+  background-size: cover;
+}
+
+.container-login {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: row;
+  width: 45rem;
+  height: 28rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-title-right {
+  font-size: 2rem;
+}
+
+.left {
+  flex: 1;
+  background-color: #6BBAA7;
+  color: #E2E8E6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 20px;
+}
+
+.signup-title-left {
+  font-size: 1.8rem;
+
+}
+
+.signInButton {
+  padding: 10px 20px;
+  width: 150px;
+  border: none;
+  border-radius: 50px;
+  background-color: #E2E8E6;
+  color: #6BBAA7;
+  cursor: pointer;
+}
+
+.right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-title-right {
+  color: #6BBAA7;
+  margin-bottom: 1.2rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.login-input {
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 350px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #F2F2F2;
+  color: #B8B8B8;
+}
+
+.login-input::placeholder {
+  color: #B8B8B8;
+}
+
+.login-button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  background-color: #6BBAA7;
+  color: white;
+  cursor: pointer;
+}
+
+.resetPassword {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #6BBAA7;
+  text-decoration: none;
+}
+
+.resetPassword:hover {
+  color: #6BBAA7;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .left, .right {
+    border-radius: 0;
+  }
+
+  .signInButton, .loginButton {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .login-input {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 429px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .left, .right {
+    border-radius: 0;
+  }
+
+  .signInButton, .loginButton {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .login-input {
+    max-width: 100%;
+  }
+}
+
+
+
+
+

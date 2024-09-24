@@ -1,0 +1,123 @@
+.modal-wrapper{
+    background-color: #E2E8E6;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 70vh;
+    width: 70vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 38px;
+    & .driver {
+        border-radius: 50%;
+        border: 2px solid #E4CC84;
+    }
+    & .modal-text{
+        display: flex;
+        flex-direction: column;
+    }
+    & .categories-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+    }
+    & .fav-p{
+        font-size: 20px;
+    }
+    & #add-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #E4CC84;
+        width: 7vw;
+        height: 5vh;
+        font-size: 15px;
+        text-align: center;
+    }
+    & #fav-trips {
+        font-size: 15px;
+        padding: 10px;
+        border: 2px solid #E4CC84;
+        border-radius: 5px;
+        background-color: #E2E8E6;
+        color: #333;
+        cursor: pointer;
+    }
+
+    & #fav-trips:focus {
+        outline: none;
+        border-color: #E4CC84;
+    }
+}
+
+.close-button span{
+    font-size: 50px;
+}
+
+
+@media (max-width: 429px){
+    .modal-wrapper{
+        flex-direction: column;
+        height: 90vh;
+        width: 90vw;
+        & .driver{
+            height: 20vh;
+        }
+        & p{
+            margin: 2%;
+            font-size: 30px;
+        }
+        & #add-button{
+            height: auto;
+            width: auto;
+        }
+        & #fav-trips{
+            height: auto;
+            width: auto;
+        }
+    }
+    .close-button {
+        left: 61vw;
+        top: -1vh;
+        padding: 0;
+    }
+    .close-button span{
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .modal-wrapper{
+        flex-direction: column;
+        height: 90vh;
+        width: 90vw;
+        font-size: 40px;
+        & .driver{
+            height: 30vh;
+        }
+        & p{
+            margin: 2%;
+            font-size: 30px;
+        }
+        & #add-button{
+            height: auto;
+            width: auto;
+        }
+    }
+    .close-button {
+        left: 74vw;
+        top: -1vh;
+        padding: 0;
+    }
+    .close-button span{
+        font-size: 50px;
+    }
+}
